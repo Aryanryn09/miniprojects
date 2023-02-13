@@ -1,0 +1,112 @@
+*{
+    margin:0%;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.background{
+    height :100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(arenaa.png);
+    background-size: cover;
+    animation: shakerd linear 0.8s infinite;
+
+}
+
+
+.car{
+    background-image: url(car.png);
+
+    background-size: 65vh 18vw;
+    height: 270px;
+    width: 680px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom :28%;
+    left:35%;
+    animation: shake linear 0.2s infinite;
+    
+}
+
+
+.over{
+    right: 80%;
+}
+
+
+
+.road{
+    background-image: url(track.png);
+  
+height: 24%;
+width: 800vw;
+background-size: cover;
+position: absolute;
+top:800px;
+background-repeat: norepeat;
+animation :carmove linear 6s infinite;
+
+
+}
+.wheel1{
+    height:157px;
+    width:157px;
+    background-image: url(wheel.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 14vh 6vw;
+    left :70px;
+    bottom :-22%;
+    animation:wheelrotation linear 0.3s infinite;
+  
+
+}
+.wheel2{
+    height:157px;
+    width:157px;
+    background-image: url(wheel.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 14vh 6vw;
+    left :470px;
+    bottom :-22%;
+    animation:wheelrotation linear 0.3s infinite;
+
+}
+@keyframes wheelrotation{
+    100%{
+        transform: rotate(-360deg);;
+        direction: opposite ;
+    }
+}
+@keyframes carmove{
+    100%{
+        transform: translate(-500vw);
+    }
+}
+@keyframes shake{
+    0%{
+transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);;
+    }
+
+}
+@keyframes shakerd{
+    0%{
+transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);;
+    }
+
+}
