@@ -1,1 +1,1 @@
-# miniprojects =.md
+# miniprojects .md
